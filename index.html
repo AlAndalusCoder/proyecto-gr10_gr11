@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Menú GR</title>
   <style>
+    /* Reinicios y layout */
     * {
       box-sizing: border-box;
     }
@@ -26,6 +27,8 @@
       max-width: 320px;
       text-align: center;
     }
+
+    /* Estilo común a ambos botones */
     .btn {
       font-family: Arial, sans-serif;
       font-weight: 700;
@@ -42,10 +45,14 @@
       cursor: pointer;
       user-select: none;
     }
+
+    /* Efecto hover “zoom” */
     .btn:hover {
       transform: scale(1.05);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
+
+    /* GR-10: fondo blanco, borde y texto rojo */
     .btn.gr10 {
       background-color: #ffffff;
       color: #d32f2f;
@@ -54,6 +61,8 @@
     .btn.gr10:hover {
       background-color: #f8e1e1;
     }
+
+    /* GR-11: fondo rojo, texto blanco */
     .btn.gr11 {
       background-color: #d32f2f;
       color: #ffffff;
@@ -61,6 +70,8 @@
     .btn.gr11:hover {
       background-color: #b72a29;
     }
+
+    /* Responsive */
     @media (max-width: 400px) {
       .btn {
         font-size: 1.1em;
@@ -71,8 +82,8 @@
 </head>
 <body>
   <div class="menu">
-    <a href="https://docs.google.com/document/d/1WfWXUNKY8O-MtQoWsiETjnBslYplsaAqDRXkIQaPA1Q/preview" class="btn gr10" target="_blank">GR-10</a>
-    <a href="https://docs.google.com/document/d/1Qpn1JxnqHs1vaJB5wcF03hyCp88hogv-ixGKJ8YFmxk/preview" class="btn gr11" target="_blank">GR-11</a>
+    <a href="https://docs.google.com/document/d/1WfWXUNKY8O-MtQoWsiETjnBslYplsaAqDRXkIQaPA1Q/preview?tab=t.0#heading=h.jc20d3fg7ht" class="btn gr10" target="_blank" rel="noopener noreferrer">GR-10</a>
+    <a href="https://docs.google.com/document/d/1Qpn1JxnqHs1vaJB5wcF03hyCp88hogv-ixGKJ8YFmxk/preview?tab=t.0#heading=h.jc20d3fg7ht" class="btn gr11" target="_blank" rel="noopener noreferrer">GR-11</a>
   </div>
 </body>
 </html>
