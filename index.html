@@ -3,21 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Menú GR</title>
+  <title>Credencial GR</title>
   <style>
     * {
       box-sizing: border-box;
     }
-
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom right, #ffffff, #f3f3f3);
+      background-color: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .menu {
@@ -25,50 +24,52 @@
       flex-direction: column;
       gap: 30px;
       width: 90%;
-      max-width: 400px;
+      max-width: 360px;
       text-align: center;
     }
 
     .btn {
-      display: block;
-      width: 100%;
-      padding: 18px 0;
-      font-size: 1.4em;
+      font-size: 1.35em;
       font-weight: bold;
+      padding: 16px 0;
+      border-radius: 14px;
+      letter-spacing: 1px;
       text-decoration: none;
-      border-radius: 12px;
-      border: 2px solid transparent;
+      display: inline-block;
+      width: 100%;
+      border: 2.5px solid transparent;
       transition: all 0.3s ease;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-      letter-spacing: 1.2px;
+      cursor: pointer;
+      user-select: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     }
 
-    /* GR-10: blanco fondo, rojo texto y borde */
+    /* GR-10: fondo blanco, borde y texto rojo */
     .btn.gr10 {
-      background-color: #ffffff;
-      color: #E60000;
-      border-color: #E60000;
+      background-color: #f4f4f4; /* Blanco RAL 9010 */
+      color: #cc0605; /* Rojo RAL 3020 */
+      border-color: #cc0605;
     }
     .btn.gr10:hover {
-      background-color: #ffe5e5;
-      box-shadow: 0 8px 20px rgba(230, 0, 0, 0.25);
+      background-color: #fff1f1;
+      box-shadow: 0 6px 15px rgba(204, 6, 5, 0.25);
     }
 
-    /* GR-11: rojo fondo, blanco texto */
+    /* GR-11: fondo rojo, texto blanco */
     .btn.gr11 {
-      background-color: #E60000;
-      color: #ffffff;
-      border-color: #E60000;
+      background-color: #cc0605; /* Rojo RAL 3020 */
+      color: #f4f4f4; /* Blanco RAL 9010 */
+      border-color: #cc0605;
     }
     .btn.gr11:hover {
-      background-color: #C40000;
-      box-shadow: 0 8px 20px rgba(230, 0, 0, 0.3);
+      background-color: #b30504;
+      box-shadow: 0 6px 15px rgba(179, 5, 4, 0.3);
     }
 
     @media (max-width: 400px) {
       .btn {
-        font-size: 1.2em;
-        padding: 16px 0;
+        font-size: 1.15em;
+        padding: 14px 0;
       }
     }
   </style>
@@ -76,9 +77,13 @@
 <body>
   <div class="menu">
     <a href="https://docs.google.com/document/d/16Byr2JLLcSDZJ1W-SZkYCPFmDNXoegBIhp9tDmEp_o0/preview?tab=t.0#heading=h.jc20d3fg7ht"
-       class="btn gr10" target="_blank" rel="noopener noreferrer">GR-10</a>
+       class="btn gr10" target="_blank" rel="noopener noreferrer">
+      GR-10
+    </a>
     <a href="https://docs.google.com/document/d/1Qpn1JxnqHs1vaJB5wcF03hyCp88hogv-ixGKJ8YFmxk/preview?tab=t.0#heading=h.jc20d3fg7ht"
-       class="btn gr11" target="_blank" rel="noopener noreferrer">GR-11</a>
+       class="btn gr11" target="_blank" rel="noopener noreferrer">
+      GR-11
+    </a>
   </div>
 </body>
 </html>
