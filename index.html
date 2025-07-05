@@ -3,47 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Menú GR Profesional</title>
+  <title>Menú GR</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      margin: 0; padding: 0;
-      display: flex; justify-content: center; align-items: center;
-      height: 100vh; background: #fafafa;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .menu {
-      display: flex; flex-direction: column; gap: 28px;
-      width: 85%; max-width: 340px; text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      width: 90%;
+      max-width: 360px;
+      text-align: center;
     }
+
     .btn {
-      padding: 18px 0;
-      font-size: 1.35em;
+      font-family: Arial, sans-serif;
       font-weight: 700;
-      border-radius: 14px;
-      text-decoration: none;
-      display: inline-block;
-      letter-spacing: 1.2px;
+      font-size: 1.35em;
+      padding: 16px 0;
+      border-radius: 16px;
       border: 2.5px solid transparent;
-      background-color: #ffffff;
-      color: #d32f2f;
-      border-color: #d32f2f;
-      user-select: none;
+      letter-spacing: 1.2px;
       cursor: pointer;
-      box-shadow: 0 5px 14px rgba(211, 47, 47, 0.25);
-      transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), 
-                  box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1);
-      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+      display: inline-block;
+      width: 100%;
+      max-width: 340px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      text-decoration: none;
     }
+
+    /* GR-10: fondo blanco, rojo oficial */
+    .btn.gr10 {
+      background-color: #FFFFFF;
+      color: #E60000;
+      border-color: #E60000;
+    }
+    .btn.gr10:hover {
+      background-color: #FFE6E6;
+    }
+
+    /* GR-11: fondo rojo oficial, texto blanco */
     .btn.gr11 {
-      background-color: #d32f2f;
-      color: #ffffff;
-      border-color: #b72a29;
-      box-shadow: 0 5px 14px rgba(183, 42, 41, 0.4);
+      background-color: #E60000;
+      color: #FFFFFF;
+      border-color: #B30000;
     }
-    .btn:active {
-      transform: scale(1.07);
-      box-shadow: 0 7px 18px rgba(0,0,0,0.3);
-      transition-duration: 0.1s;
+    .btn.gr11:hover {
+      background-color: #B30000;
+    }
+
+    @media (max-width: 400px) {
+      .btn {
+        font-size: 1.1em;
+        padding: 14px 0;
+      }
     }
   </style>
 </head>
