@@ -8,76 +8,77 @@
     * {
       box-sizing: border-box;
     }
+
     body {
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background: linear-gradient(to bottom right, #ffffff, #f3f3f3);
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
+
     .menu {
       display: flex;
       flex-direction: column;
-      gap: 25px;
+      gap: 30px;
       width: 90%;
-      max-width: 360px;
+      max-width: 400px;
       text-align: center;
     }
 
     .btn {
-      font-family: Arial, sans-serif;
-      font-weight: 700;
-      font-size: 1.35em;
-      padding: 16px 0;
-      border-radius: 16px;
-      border: 2.5px solid transparent;
-      letter-spacing: 1.2px;
-      cursor: pointer;
-      user-select: none;
-      display: inline-block;
+      display: block;
       width: 100%;
-      max-width: 340px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
+      padding: 18px 0;
+      font-size: 1.4em;
+      font-weight: bold;
       text-decoration: none;
+      border-radius: 12px;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+      letter-spacing: 1.2px;
     }
 
-    /* GR-10: fondo blanco, rojo oficial */
+    /* GR-10: blanco fondo, rojo texto y borde */
     .btn.gr10 {
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       color: #E60000;
       border-color: #E60000;
     }
     .btn.gr10:hover {
-      background-color: #FFE6E6;
+      background-color: #ffe5e5;
+      box-shadow: 0 8px 20px rgba(230, 0, 0, 0.25);
     }
 
-    /* GR-11: fondo rojo oficial, texto blanco */
+    /* GR-11: rojo fondo, blanco texto */
     .btn.gr11 {
       background-color: #E60000;
-      color: #FFFFFF;
-      border-color: #B30000;
+      color: #ffffff;
+      border-color: #E60000;
     }
     .btn.gr11:hover {
-      background-color: #B30000;
+      background-color: #C40000;
+      box-shadow: 0 8px 20px rgba(230, 0, 0, 0.3);
     }
 
     @media (max-width: 400px) {
       .btn {
-        font-size: 1.1em;
-        padding: 14px 0;
+        font-size: 1.2em;
+        padding: 16px 0;
       }
     }
   </style>
 </head>
 <body>
   <div class="menu">
-    <a href="https://docs.google.com/document/d/16Byr2JLLcSDZJ1W-SZkYCPFmDNXoegBIhp9tDmEp_o0/preview?tab=t.0#heading=h.jc20d3fg7ht" class="btn gr10" target="_blank" rel="noopener noreferrer">GR-10</a>
-    <a href="https://docs.google.com/document/d/1Qpn1JxnqHs1vaJB5wcF03hyCp88hogv-ixGKJ8YFmxk/preview?tab=t.0#heading=h.jc20d3fg7ht" class="btn gr11" target="_blank" rel="noopener noreferrer">GR-11</a>
+    <a href="https://docs.google.com/document/d/16Byr2JLLcSDZJ1W-SZkYCPFmDNXoegBIhp9tDmEp_o0/preview?tab=t.0#heading=h.jc20d3fg7ht"
+       class="btn gr10" target="_blank" rel="noopener noreferrer">GR-10</a>
+    <a href="https://docs.google.com/document/d/1Qpn1JxnqHs1vaJB5wcF03hyCp88hogv-ixGKJ8YFmxk/preview?tab=t.0#heading=h.jc20d3fg7ht"
+       class="btn gr11" target="_blank" rel="noopener noreferrer">GR-11</a>
   </div>
 </body>
 </html>
