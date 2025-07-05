@@ -1,83 +1,46 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Menú GR</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #fafafa;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+.btn {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.35em;
+  padding: 16px 0;
+  border-radius: 16px;
+  border: 2.5px solid transparent;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(214, 40, 40, 0.25);
+  transition: all 0.3s ease;
+}
 
-    .menu {
-      display: flex;
-      flex-direction: column;
-      gap: 26px;
-      width: 85%;
-      max-width: 340px;
-      text-align: center;
-    }
+.btn.gr10 {
+  background: linear-gradient(145deg, #ffffff, #f2f2f2);
+  color: #d62828;
+  border-color: #d62828;
+  box-shadow: 0 4px 12px rgba(214, 40, 40, 0.2);
+}
 
-    .btn {
-      padding: 18px 0;
-      font-size: 1.3em;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-      border-radius: 14px;
-      text-decoration: none;
-      letter-spacing: 1px;
-      border: 2.5px solid transparent;
-      user-select: none;
-      cursor: pointer;
-      box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
-      transition: transform 0.18s ease, box-shadow 0.18s ease;
-      -webkit-tap-highlight-color: transparent;
-    }
+.btn.gr10:hover {
+  background: linear-gradient(145deg, #f9f9f9, #e6e6e6);
+  border-color: #b22222;
+  box-shadow: 0 6px 15px rgba(178, 34, 34, 0.3);
+  color: #a32020;
+  transform: scale(1.05);
+}
 
-    .btn.gr10 {
-      background-color: #ffffff;
-      color: #d32f2f;
-      border-color: #d32f2f;
-    }
+.btn.gr11 {
+  background: linear-gradient(145deg, #d62828, #b22222);
+  color: #ffffff;
+  border-color: #a32020;
+  box-shadow: 0 4px 12px rgba(178, 34, 34, 0.3);
+}
 
-    .btn.gr10:hover {
-      background-color: #fbeaea;
-    }
-
-    .btn.gr11 {
-      background-color: #d32f2f;
-      color: #ffffff;
-      border-color: #b72a29;
-    }
-
-    .btn.gr11:hover {
-      background-color: #c62828;
-    }
-
-    .btn:active {
-      transform: scale(1.06);
-      box-shadow: 0 7px 18px rgba(0, 0, 0, 0.25);
-    }
-
-    @media (max-width: 400px) {
-      .btn {
-        font-size: 1.1em;
-        padding: 16px 0;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="menu">
-    <a href="https://docs.google.com/document/d/16Byr2JLLcSDZJ1W-SZkYCPFmDNXoegBIhp9tDmEp_o0/preview?tab=t.0#heading=h.jc20d3fg7ht" class="btn gr10">GR-10</a>
-    <a href="https://docs.google.com/document/d/1Qpn1JxnqHs1vaJB5wcF03hyCp88hogv-ixGKJ8YFmxk/preview?tab=t.0#heading=h.jc20d3fg7ht" class="btn gr11">GR-11</a>
-  </div>
-</body>
-</html>
+.btn.gr11:hover {
+  background: linear-gradient(145deg, #b22222, #8b1a1a);
+  border-color: #6e1515;
+  box-shadow: 0 6px 18px rgba(139, 26, 26, 0.4);
+  transform: scale(1.05);
+}
