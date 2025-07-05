@@ -1,92 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Botones GR10 y GR11</title>
-<style>
-  /* Reset básico */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Botones GR10 y GR11</title>
+  <style>
+    /* Centrar todo el contenido en la pantalla */
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* altura completa de la ventana */
+      margin: 0;
+      background-color: #fff; /* opcional */
+    }
 
-  /* Contenedor que centra todo vertical y horizontal */
-  body, html {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f9f9f9;
-    font-family: Arial, sans-serif;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 360px;
-    padding: 0 10px;
-  }
-
-  .btn {
-    font-weight: 700;
-    font-size: 1.35em;
-    padding: 20px 0;          /* Más alto que antes para dar mayor tamaño */
-    border-radius: 16px;
-    border: 2.5px solid transparent;
-    letter-spacing: 1.2px;
-    cursor: pointer;
-    user-select: none;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    width: 100%;              /* Ocupa todo el ancho máximo */
-    max-width: 340px;         /* Máximo ancho para que no se haga más grande */
-    box-shadow: 0 4px 10px rgba(210, 34, 34, 0.25);
-    transition: all 0.3s ease;
-  }
-
-  /* GR10: fondo blanco, texto rojo y borde rojo */
-  .btn.gr10 {
-    background: linear-gradient(145deg, #ffffff, #f2f2f2);
-    color: #d22229;
-    border-color: #d22229;
-    box-shadow: 0 4px 12px rgba(210, 34, 34, 0.2);
-  }
-  .btn.gr10:hover {
-    background: linear-gradient(145deg, #f9f9f9, #e6e6e6);
-    border-color: #a3181d;
-    box-shadow: 0 6px 15px rgba(163, 24, 29, 0.3);
-    color: #a3181d;
-    transform: scale(1.05);
-  }
-
-  /* GR11: fondo rojo, texto blanco */
-  .btn.gr11 {
-    background: linear-gradient(145deg, #d22229, #a3181d);
-    color: #ffffff;
-    border-color: #8b151a;
-    box-shadow: 0 4px 12px rgba(163, 24, 29, 0.3);
-  }
-  .btn.gr11:hover {
-    background: linear-gradient(145deg, #a3181d, #6b1013);
-    border-color: #520b0e;
-    box-shadow: 0 6px 18px rgba(82, 11, 14, 0.4);
-    transform: scale(1.05);
-  }
-</style>
+    .btn {
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+      font-size: 1.35em;
+      padding: 16px 0;
+      border-radius: 16px;
+      border: 2.5px solid transparent;
+      letter-spacing: 1.2px;
+      cursor: pointer;
+      user-select: none;
+      width: 100%;
+      max-width: 340px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(214, 40, 40, 0.25);
+      transition: all 0.3s ease;
+      margin: 10px 0;
+      display: block;
+    }
+    .btn.gr10 {
+      background: linear-gradient(145deg, #ffffff, #f2f2f2);
+      color: #d62828;
+      border-color: #d62828;
+      box-shadow: 0 4px 12px rgba(214, 40, 40, 0.2);
+    }
+    .btn.gr10:hover {
+      background: linear-gradient(145deg, #f9f9f9, #e6e6e6);
+      border-color: #b22222;
+      box-shadow: 0 6px 15px rgba(178, 34, 34, 0.3);
+      color: #a32020;
+      transform: scale(1.05);
+    }
+    .btn.gr11 {
+      background: linear-gradient(145deg, #d62828, #b22222);
+      color: #ffffff;
+      border-color: #a32020;
+      box-shadow: 0 4px 12px rgba(178, 34, 34, 0.3);
+    }
+    .btn.gr11:hover {
+      background: linear-gradient(145deg, #b22222, #8b1a1a);
+      border-color: #6e1515;
+      box-shadow: 0 6px 18px rgba(139, 26, 26, 0.4);
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <a href="https://docs.google.com/document/d/16Byr2JLLcSDZJ1W-SZkYCPFmDNXoegBIhp9tDmEp_o0/preview?tab=t.0#heading=h.jc20d3fg7ht" target="_blank" class="btn gr10" rel="noopener noreferrer">
-      GR10
-    </a>
-    <a href="https://docs.google.com/document/d/1Qpn1JxnqHs1vaJB5wcF03hyCp88hogv-ixGKJ8YFmxk/preview?tab=t.0#heading=h.jc20d3fg7ht" target="_blank" class="btn gr11" rel="noopener noreferrer">
-      GR11
-    </a>
-  </div>
+  <button class="btn gr10" onclick="window.location.href='https://docs.google.com/document/d/16Byr2JLLcSDZJ1W-SZkYCPFmDNXoegBIhp9tDmEp_o0/preview?tab=t.0#heading=h.jc20d3fg7ht'">GR-10</button>
+
+  <button class="btn gr11" onclick="window.location.href='https://docs.google.com/document/d/1Qpn1JxnqHs1vaJB5wcF03hyCp88hogv-ixGKJ8YFmxk/preview?tab=t.0#heading=h.jc20d3fg7ht'">GR-11</button>
 </body>
 </html>
