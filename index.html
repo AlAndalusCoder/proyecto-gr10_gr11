@@ -34,7 +34,7 @@
   .btn {
     font-weight: 700;
     font-size: 1.35em;
-    padding: 16px 0;
+    padding: 20px 0;          /* Más alto que antes para dar mayor tamaño */
     border-radius: 16px;
     border: 2.5px solid transparent;
     letter-spacing: 1.2px;
@@ -43,11 +43,13 @@
     text-align: center;
     text-decoration: none;
     display: block;
+    width: 100%;              /* Ocupa todo el ancho máximo */
+    max-width: 340px;         /* Máximo ancho para que no se haga más grande */
     box-shadow: 0 4px 10px rgba(210, 34, 34, 0.25);
     transition: all 0.3s ease;
   }
 
-  /* GR10: blanco fondo, rojo texto y borde */
+  /* GR10: fondo blanco, texto rojo y borde rojo */
   .btn.gr10 {
     background: linear-gradient(145deg, #ffffff, #f2f2f2);
     color: #d22229;
@@ -62,7 +64,7 @@
     transform: scale(1.05);
   }
 
-  /* GR11: rojo fondo, blanco texto */
+  /* GR11: fondo rojo, texto blanco */
   .btn.gr11 {
     background: linear-gradient(145deg, #d22229, #a3181d);
     color: #ffffff;
