@@ -1,19 +1,10 @@
-# Código para crear index.html (te lo preparo para que descargues):
-html_content = '''<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Botones GR</title>
+  <title>Botones GR10 y GR11</title>
   <style>
-    body {
-      background-color: #f9f9f9;
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
     .btn {
       font-family: Arial, sans-serif;
       font-weight: 700;
@@ -30,10 +21,8 @@ html_content = '''<!DOCTYPE html>
       text-align: center;
       box-shadow: 0 4px 10px rgba(214, 40, 40, 0.25);
       transition: all 0.3s ease;
-      margin: 10px 0;
-      text-decoration: none;
-      box-sizing: border-box;
-      -webkit-tap-highlight-color: transparent;
+      margin: 10px auto;
+      display: block;
     }
     .btn.gr10 {
       background: linear-gradient(145deg, #ffffff, #f2f2f2);
@@ -41,14 +30,12 @@ html_content = '''<!DOCTYPE html>
       border-color: #d62828;
       box-shadow: 0 4px 12px rgba(214, 40, 40, 0.2);
     }
-    .btn.gr10:hover,
-    .btn.gr10:focus {
+    .btn.gr10:hover {
       background: linear-gradient(145deg, #f9f9f9, #e6e6e6);
       border-color: #b22222;
       box-shadow: 0 6px 15px rgba(178, 34, 34, 0.3);
       color: #a32020;
       transform: scale(1.05);
-      outline: none;
     }
     .btn.gr11 {
       background: linear-gradient(145deg, #d62828, #b22222);
@@ -56,23 +43,17 @@ html_content = '''<!DOCTYPE html>
       border-color: #a32020;
       box-shadow: 0 4px 12px rgba(178, 34, 34, 0.3);
     }
-    .btn.gr11:hover,
-    .btn.gr11:focus {
+    .btn.gr11:hover {
       background: linear-gradient(145deg, #b22222, #8b1a1a);
       border-color: #6e1515;
       box-shadow: 0 6px 18px rgba(139, 26, 26, 0.4);
       transform: scale(1.05);
-      outline: none;
     }
   </style>
 </head>
 <body>
-  <a href="https://docs.google.com/document/d/1WfWXUNKY8O-MtQoWsiETjnBslYplsaAqDRXkIQaPA1Q/preview?tab=t.0#heading=h.jc20d3fg7ht" target="_blank" class="btn gr10" aria-label="GR10">GR-10</a>
-  <a href="https://docs.google.com/document/d/1Qpn1JxnqHs1vaJB5wcF03hyCp88hogv-ixGKJ8YFmxk/preview?tab=t.0#heading=h.jc20d3fg7ht" target="_blank" class="btn gr11" aria-label="GR11">GR-11</a>
+  <button class="btn gr10" onclick="window.location.href='https://docs.google.com/document/d/1WfWXUNKY8O-MtQoWsiETjnBslYplsaAqDRXkIQaPA1Q/preview?tab=t.0#heading=h.jc20d3fg7ht'">GR-10</button>
+
+  <button class="btn gr11" onclick="window.location.href='https://docs.google.com/document/d/1Qpn1JxnqHs1vaJB5wcF03hyCp88hogv-ixGKJ8YFmxk/preview?tab=t.0#heading=h.jc20d3fg7ht'">GR-11</button>
 </body>
 </html>
-'''
-
-# Lo guardo para ti:
-with open("/mnt/data/index.html", "w", encoding="utf-8") as f:
-    f.write(html_content)
