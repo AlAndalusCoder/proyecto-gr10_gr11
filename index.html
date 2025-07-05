@@ -1,46 +1,75 @@
-.btn {
-  font-family: Arial, sans-serif;
-  font-weight: 700;
-  font-size: 1.35em;
-  padding: 16px 0;
-  border-radius: 16px;
-  border: 2.5px solid transparent;
-  letter-spacing: 1.2px;
-  cursor: pointer;
-  user-select: none;
-  display: inline-block;
-  width: 100%;
-  max-width: 340px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(214, 40, 40, 0.25);
-  transition: all 0.3s ease;
-}
-
-.btn.gr10 {
-  background: linear-gradient(145deg, #ffffff, #f2f2f2);
-  color: #d62828;
-  border-color: #d62828;
-  box-shadow: 0 4px 12px rgba(214, 40, 40, 0.2);
-}
-
-.btn.gr10:hover {
-  background: linear-gradient(145deg, #f9f9f9, #e6e6e6);
-  border-color: #b22222;
-  box-shadow: 0 6px 15px rgba(178, 34, 34, 0.3);
-  color: #a32020;
-  transform: scale(1.05);
-}
-
-.btn.gr11 {
-  background: linear-gradient(145deg, #d62828, #b22222);
-  color: #ffffff;
-  border-color: #a32020;
-  box-shadow: 0 4px 12px rgba(178, 34, 34, 0.3);
-}
-
-.btn.gr11:hover {
-  background: linear-gradient(145deg, #b22222, #8b1a1a);
-  border-color: #6e1515;
-  box-shadow: 0 6px 18px rgba(139, 26, 26, 0.4);
-  transform: scale(1.05);
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menú GR Profesional</title>
+  <style>
+    body {
+      margin: 0; padding: 0;
+      display: flex; justify-content: center; align-items: center;
+      height: 100vh; background: #fafafa;
+      font-family: Arial, sans-serif;
+    }
+    .menu {
+      display: flex; flex-direction: column; gap: 28px;
+      width: 85%; max-width: 340px; text-align: center;
+    }
+    .btn {
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+      font-size: 1.35em;
+      padding: 16px 0;
+      border-radius: 16px;
+      border: 2.5px solid transparent;
+      letter-spacing: 1.2px;
+      cursor: pointer;
+      user-select: none;
+      display: inline-block;
+      width: 100%;
+      max-width: 340px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(214, 40, 40, 0.25);
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    .btn.gr10 {
+      background: linear-gradient(145deg, #ffffff, #f2f2f2);
+      color: #d62828;
+      border-color: #d62828;
+      box-shadow: 0 4px 12px rgba(214, 40, 40, 0.2);
+    }
+    .btn.gr10:hover {
+      background: linear-gradient(145deg, #f9f9f9, #e6e6e6);
+      border-color: #b22222;
+      box-shadow: 0 6px 15px rgba(178, 34, 34, 0.3);
+      color: #a32020;
+      transform: scale(1.05);
+    }
+    .btn.gr11 {
+      background: linear-gradient(145deg, #d62828, #b22222);
+      color: #ffffff;
+      border-color: #a32020;
+      box-shadow: 0 4px 12px rgba(178, 34, 34, 0.3);
+    }
+    .btn.gr11:hover {
+      background: linear-gradient(145deg, #b22222, #8b1a1a);
+      border-color: #6e1515;
+      box-shadow: 0 6px 18px rgba(139, 26, 26, 0.4);
+      transform: scale(1.05);
+    }
+    /* Para toque móvil */
+    .btn:active {
+      transform: scale(1.07);
+      box-shadow: 0 7px 18px rgba(0,0,0,0.3);
+      transition-duration: 0.1s;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <a href="https://docs.google.com/document/d/16Byr2JLLcSDZJ1W-SZkYCPFmDNXoegBIhp9tDmEp_o0/preview?tab=t.0#heading=h.jc20d3fg7ht" class="btn gr10" target="_blank" rel="noopener noreferrer">GR-10</a>
+    <a href="https://docs.google.com/document/d/1Qpn1JxnqHs1vaJB5wcF03hyCp88hogv-ixGKJ8YFmxk/preview?tab=t.0#heading=h.jc20d3fg7ht" class="btn gr11" target="_blank" rel="noopener noreferrer">GR-11</a>
+  </div>
+</body>
+</html>
