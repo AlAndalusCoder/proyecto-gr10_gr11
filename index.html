@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Botones GR10 y GR11</title>
   <style>
+    /* Centrar todo el contenido en la pantalla */
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* altura completa de la ventana */
+      margin: 0;
+      background-color: #fff; /* opcional */
+    }
+
     .btn {
       font-family: Arial, sans-serif;
       font-weight: 700;
@@ -15,13 +26,12 @@
       letter-spacing: 1.2px;
       cursor: pointer;
       user-select: none;
-      display: inline-block;
       width: 100%;
       max-width: 340px;
       text-align: center;
       box-shadow: 0 4px 10px rgba(214, 40, 40, 0.25);
       transition: all 0.3s ease;
-      margin: 10px auto;
+      margin: 10px 0;
       display: block;
     }
     .btn.gr10 {
@@ -52,7 +62,7 @@
   </style>
 </head>
 <body>
-  <button class="btn gr10" onclick="window.location.href='https://docs.google.com/document/d/1WfWXUNKY8O-MtQoWsiETjnBslYplsaAqDRXkIQaPA1Q/preview?tab=t.0#heading=h.jc20d3fg7ht'">GR-10</button>
+  <button class="btn gr10" onclick="window.location.href='https://docs.google.com/document/d/16Byr2JLLcSDZJ1W-SZkYCPFmDNXoegBIhp9tDmEp_o0/preview?tab=t.0#heading=h.jc20d3fg7ht'">GR-10</button>
 
   <button class="btn gr11" onclick="window.location.href='https://docs.google.com/document/d/1Qpn1JxnqHs1vaJB5wcF03hyCp88hogv-ixGKJ8YFmxk/preview?tab=t.0#heading=h.jc20d3fg7ht'">GR-11</button>
 </body>
