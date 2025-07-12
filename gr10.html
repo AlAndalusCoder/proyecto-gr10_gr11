@@ -13,27 +13,33 @@
       padding: 0 15px;
     }
     .header {
+      display: inline-block;
       background-color: #000000;
-      text-align: center;
-      padding: 20px 0;
-      font-weight: bold;
+      margin-top: 20px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 20px;
       font-size: 2em;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
     }
-    .header span.gr {
+    .header .gr {
       color: #cc0605;
     }
-    .header span.num {
+    .header .num {
       color: #f4f4f4;
     }
     .instructions {
-      margin-top: 20px;
-      font-weight: bold;
-      font-size: 1.1em;
+      margin-top: 30px;
     }
     .instructions p {
       display: flex;
       align-items: center;
-      margin-bottom: 10px;
+      font-weight: bold;
+      color: #cc0605;
+      font-family: Arial, sans-serif;
+      font-size: 1.1em;
+      margin-bottom: 12px;
     }
     .instructions img {
       width: 24px;
@@ -43,9 +49,7 @@
     .stage {
       display: flex;
       align-items: center;
-      margin: 12px 0;
-      font-family: Arial, sans-serif;
-      color: #000000;
+      margin: 10px 0;
       flex-wrap: wrap;
     }
     .stage-label {
@@ -55,16 +59,18 @@
       font-weight: bold;
       font-family: Arial, sans-serif;
       margin-right: 10px;
-      min-width: 110px;
+      min-width: 100px;
       text-align: center;
     }
     .stage-name {
       font-weight: bold;
       font-family: Arial, sans-serif;
+      color: #000000;
     }
   </style>
 </head>
 <body>
+
   <div class="header">
     <span class="gr">GR-</span><span class="num">10</span>
   </div>
@@ -76,7 +82,8 @@
   </div>
 
   <div class="stages">
-    <!-- Lista completa de etapas -->
+    <!-- Etapas GR10 -->
+    <!-- Las 42 etapas, ajustadas -->
     <div class="stage"><span class="stage-label">Étape 1:</span><span class="stage-name">Banyuls sur Mer - Col de L’Ouillat</span></div>
     <div class="stage"><span class="stage-label">Étape 2:</span><span class="stage-name">Col de L’Ouillat - Las Illas</span></div>
     <div class="stage"><span class="stage-label">Étape 3:</span><span class="stage-name">Las Illas - La Palette</span></div>
@@ -104,9 +111,4 @@
     <div class="stage"><span class="stage-label">Étape 25:</span><span class="stage-name">Loudenvielle - Refuge de l'Oule (Lac d'Oule)</span></div>
     <div class="stage"><span class="stage-label">Étape 26:</span><span class="stage-name">Refuge de l'Oule (Lac d'Oule) - Barèges</span></div>
     <div class="stage"><span class="stage-label">Étape 27:</span><span class="stage-name">Barèges - Luz Saint Sauveur</span></div>
-    <div class="stage"><span class="stage-label">Étape 28:</span><span class="stage-name">Luz Saint Sauveur - Cauterets</span></div>
-    <div class="stage"><span class="stage-label">Étape 29:</span><span class="stage-name">Cauterets - Arrens-Marsous</span></div>
-    <div class="stage"><span class="stage-label">Étape 30:</span><span class="stage-name">Arrens-Marsous - Gourette</span></div>
-    <div class="stage"><span class="stage-label">Étape 31:</span><span class="stage-name">Gourette - Gabas</span></div>
-    <div class="stage"><span class="stage-label">Étape 32:</span><span class="stage-name">Gabas - Refuge d'Ayous</span></div>
-    <div class
+    <div class="stage"><span class="stage-label">Étape 28:</span><span class="stage-name">Luz Saint Sauveur - Cauterets</span></div
