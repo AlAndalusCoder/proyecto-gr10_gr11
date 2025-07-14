@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>GR-10</title>
   <style>
     body {
-      background-color: #f4f4f4;
+      background-color: #f4f4f4; /* RAL9010 aproximado */
       font-family: Arial, sans-serif;
       color: #000000;
       margin: 0;
@@ -46,6 +46,9 @@
       height: auto;
       margin-right: 8px;
     }
+    .stages {
+      margin-top: 20px;
+    }
     .stage {
       display: flex;
       align-items: center;
@@ -54,14 +57,15 @@
     }
     .stage-label {
       background-color: #cc0605;
-      color: #f4f4ed;
-      padding: 8px 14px;
+      color: #ffffff; /* texto blanco oficial */
+      padding: 6px 8px; /* menos padding horizontal para que el fondo rojo sea más ajustado */
       font-weight: bold;
-      width: 120px;
       text-align: center;
       border-radius: 6px;
       display: inline-block;
       margin-right: 10px;
+      min-width: fit-content; /* que solo ocupe el ancho del texto */
+      white-space: nowrap;
     }
     .stage-name {
       font-weight: bold;
