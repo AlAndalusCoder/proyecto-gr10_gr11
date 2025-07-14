@@ -2,78 +2,137 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>GR-11</title>
   <style>
     body {
+      background-color: #f4f4f4; /* RAL9010 aproximado */
       font-family: Arial, sans-serif;
-      padding: 2rem;
-      background-color: #f9f9f9;
-      line-height: 1.6;
+      color: #000000;
+      margin: 0;
+      padding: 0 15px;
     }
-    h1 {
+    .header {
+      display: inline-block;
+      background-color: #000000;
+      margin-top: 40px;
+      padding: 4px 14px;
+      font-size: 1.6em;
+      font-weight: bold;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      border-radius: 8px;
+      line-height: 1.2;
+    }
+    .header .gr {
+      color: #cc0605;
+    }
+    .header .num {
+      color: #f4f4f4;
+    }
+    .instructions {
+      margin-top: 30px;
+    }
+    .instructions p {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: #cc0605;
+      font-size: 1.1em;
+      margin-bottom: 12px;
+    }
+    .instructions img {
+      width: 24px;
+      height: auto;
+      margin-right: 8px;
+    }
+    .stages {
+      margin-top: 20px;
+    }
+    .stage {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      flex-wrap: wrap;
+    }
+    .stage-label {
+      background-color: #cc0605;
+      color: #ffffff; /* texto blanco oficial */
+      padding: 6px 8px; /* menos padding horizontal para que el fondo rojo sea más ajustado */
+      font-weight: bold;
       text-align: center;
-      color: #333;
+      border-radius: 6px;
+      display: inline-block;
+      margin-right: 10px;
+      min-width: fit-content; /* que solo ocupe el ancho del texto */
+      white-space: nowrap;
     }
-    ul {
-      max-width: 600px;
-      margin: 2rem auto;
-      padding-left: 1.2rem;
-    }
-    li {
-      margin-bottom: 0.8rem;
+    .stage-name {
+      font-weight: bold;
+      color: #000000;
     }
   </style>
 </head>
 <body>
-  <h1>GR-11</h1>
-  <ul>
-    <li>Etapa 1: Cabo Higuer - Bera/Vera de Bidasoa</li>
-    <li>Etapa 2: Bera/Vera de Bidasoa - Elizondo</li>
-    <li>Etapa 3: Elizondo - Puerto de Urkiaga</li>
-    <li>Etapa 4: Puerto de Urkiaga - Burguete/Auritz</li>
-    <li>Etapa 5: Burguete/Auritz - Villanueva de Aezkoa/Hiriberri</li>
-    <li>Etapa 6: Villanueva de Aezkoa/Hiriberri - Ochagavía/Otsagabia</li>
-    <li>Etapa 7: Ochagavía/Otsagabia - Isaba/Izaba</li>
-    <li>Etapa 8: Isaba/Izaba - Zuriza</li>
-    <li>Etapa 9: Zuriza - La Mina (Guarrinza)</li>
-    <li>Etapa 10: La Mina (Guarrinza) - Refugio de Lizara</li>
-    <li>Etapa 11: Refugio de Lizara - Candanchú</li>
-    <li>Etapa 12: Candanchú - Sallent de Gállego</li>
-    <li>Etapa 13: Sallent de Gállego - Refugio de Respomuso</li>
-    <li>Etapa 14: Refugio de Respomuso - Baños de Panticosa</li>
-    <li>Etapa 15: Baños de Panticosa - San Nicolás de Bujaruelo</li>
-    <li>Etapa 16: San Nicolás de Bujaruelo - Refugio de góriz</li>
-    <li>Etapa 17: Refugio de góriz - Refugio de Pineta</li>
-    <li>Etapa 18: Refugio de Pineta - Parzán</li>
-    <li>Etapa 19: Parzán - Refugio de Viadós</li>
-    <li>Etapa 20: Refugio de Viadós - Puente de San Jaime</li>
-    <li>Etapa 21: Puente de San Jaime - Refugio de Llauset</li>
-    <li>Etapa 22: Refugio de Llauset - Refugio de Conangles</li>
-    <li>Etapa 23: Refugio de Conangles - Refugio de la Restanca</li>
-    <li>Etapa 24: Refugio de la Restanca - Refugio de Colomèrs</li>
-    <li>Etapa 25: Refugio de Colomèrs - Refugio Ernest Mallafré</li>
-    <li>Etapa 26: Refugio Ernest Mallafré - La Guingueta d´Àneu</li>
-    <li>Etapa 27: La Guingueta d´Àneu - Estaon</li>
-    <li>Etapa 28: Estaon - Tavascán</li>
-    <li>Etapa 29: Tavascán - Àreu</li>
-    <li>Etapa 30: Àreu - Refugio de Baiau</li>
-    <li>Etapa 31: Refugio de Baiau - Arans</li>
-    <li>Etapa 32: Arans - Encamp</li>
-    <li>Etapa 33: Encamp - Refugio de L´illa</li>
-    <li>Etapa 34: Refugio de L´illa - Refugio de Malniu</li>
-    <li>Etapa 35: Refugio de Malniu - Puigcerdà</li>
-    <li>Etapa 36: Puigcerdà - Planoles</li>
-    <li>Etapa 37: Planoles - Santuario de Nuria</li>
-    <li>Etapa 38: Santuario de Nuria - Refugio de Ulldeter</li>
-    <li>Etapa 39: Refugio de Ulldeter - Molló</li>
-    <li>Etapa 40: Molló - Talaixà</li>
-    <li>Etapa 41: Talaixà - Albanyà</li>
-    <li>Etapa 42: Albanyà - La Vajol</li>
-    <li>Etapa 43: La Vajol - Requessens</li>
-    <li>Etapa 44: Requessens - Vilamaniscle</li>
-    <li>Etapa 45: Vilamaniscle - Port de la Selva</li>
-    <li>Etapa 46: Port de la Selva - Cap de Creus</li>
-  </ul>
+
+  <div class="header">
+    <span class="gr">GR-</span><span class="num">11</span>
+  </div>
+
+  <div class="instructions">
+    <p><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="España">Haga clic en el título de cada etapa para acceder a la información detallada.</p>
+    <p><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg" alt="Francia">Cliquez sur le titre de chaque étape pour accéder aux informations détaillées.</p>
+    <p><img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="Inglaterra">Click on the title of each stage to access detailed information.</p>
+  </div>
+
+  <div class="stages">
+    <div class="stage"><span class="stage-label">Étape 1:</span><span class="stage-name">Col d'Ares - Campelles</span></div>
+    <div class="stage"><span class="stage-label">Étape 2:</span><span class="stage-name">Campelles - Molló</span></div>
+    <div class="stage"><span class="stage-label">Étape 3:</span><span class="stage-name">Molló - Llanars</span></div>
+    <div class="stage"><span class="stage-label">Étape 4:</span><span class="stage-name">Llanars - Ogassa</span></div>
+    <div class="stage"><span class="stage-label">Étape 5:</span><span class="stage-name">Ogassa - Ribes de Freser</span></div>
+    <div class="stage"><span class="stage-label">Étape 6:</span><span class="stage-name">Ribes de Freser - Pardines</span></div>
+    <div class="stage"><span class="stage-label">Étape 7:</span><span class="stage-name">Pardines - Queralbs</span></div>
+    <div class="stage"><span class="stage-label">Étape 8:</span><span class="stage-name">Queralbs - Núria</span></div>
+    <div class="stage"><span class="stage-label">Étape 9:</span><span class="stage-name">Núria - Fontalba</span></div>
+    <div class="stage"><span class="stage-label">Étape 10:</span><span class="stage-name">Fontalba - Setcases</span></div>
+    <div class="stage"><span class="stage-label">Étape 11:</span><span class="stage-name">Setcases - Molló</span></div>
+    <div class="stage"><span class="stage-label">Étape 12:</span><span class="stage-name">Molló - Sant Pau de Segúries</span></div>
+    <div class="stage"><span class="stage-label">Étape 13:</span><span class="stage-name">Sant Pau de Segúries - Camprodon</span></div>
+    <div class="stage"><span class="stage-label">Étape 14:</span><span class="stage-name">Camprodon - Llanars</span></div>
+    <div class="stage"><span class="stage-label">Étape 15:</span><span class="stage-name">Llanars - Ogassa</span></div>
+    <div class="stage"><span class="stage-label">Étape 16:</span><span class="stage-name">Ogassa - Ribes de Freser</span></div>
+    <div class="stage"><span class="stage-label">Étape 17:</span><span class="stage-name">Ribes de Freser - Pardines</span></div>
+    <div class="stage"><span class="stage-label">Étape 18:</span><span class="stage-name">Pardines - Queralbs</span></div>
+    <div class="stage"><span class="stage-label">Étape 19:</span><span class="stage-name">Queralbs - Núria</span></div>
+    <div class="stage"><span class="stage-label">Étape 20:</span><span class="stage-name">Núria - Fontalba</span></div>
+    <div class="stage"><span class="stage-label">Étape 21:</span><span class="stage-name">Fontalba - Setcases</span></div>
+    <div class="stage"><span class="stage-label">Étape 22:</span><span class="stage-name">Setcases - Molló</span></div>
+    <div class="stage"><span class="stage-label">Étape 23:</span><span class="stage-name">Molló - Sant Pau de Segúries</span></div>
+    <div class="stage"><span class="stage-label">Étape 24:</span><span class="stage-name">Sant Pau de Segúries - Camprodon</span></div>
+    <div class="stage"><span class="stage-label">Étape 25:</span><span class="stage-name">Camprodon - Llanars</span></div>
+    <div class="stage"><span class="stage-label">Étape 26:</span><span class="stage-name">Llanars - Ogassa</span></div>
+    <div class="stage"><span class="stage-label">Étape 27:</span><span class="stage-name">Ogassa - Ribes de Freser</span></div>
+    <div class="stage"><span class="stage-label">Étape 28:</span><span class="stage-name">Ribes de Freser - Pardines</span></div>
+    <div class="stage"><span class="stage-label">Étape 29:</span><span class="stage-name">Pardines - Queralbs</span></div>
+    <div class="stage"><span class="stage-label">Étape 30:</span><span class="stage-name">Queralbs - Núria</span></div>
+    <div class="stage"><span class="stage-label">Étape 31:</span><span class="stage-name">Núria - Fontalba</span></div>
+    <div class="stage"><span class="stage-label">Étape 32:</span><span class="stage-name">Fontalba - Setcases</span></div>
+    <div class="stage"><span class="stage-label">Étape 33:</span><span class="stage-name">Setcases - Molló</span></div>
+    <div class="stage"><span class="stage-label">Étape 34:</span><span class="stage-name">Molló - Sant Pau de Segúries</span></div>
+    <div class="stage"><span class="stage-label">Étape 35:</span><span class="stage-name">Sant Pau de Segúries - Camprodon</span></div>
+    <div class="stage"><span class="stage-label">Étape 36:</span><span class="stage-name">Camprodon - Llanars</span></div>
+    <div class="stage"><span class="stage-label">Étape 37:</span><span class="stage-name">Llanars - Ogassa</span></div>
+    <div class="stage"><span class="stage-label">Étape 38:</span><span class="stage-name">Ogassa - Ribes de Freser</span></div>
+    <div class="stage"><span class="stage-label">Étape 39:</span><span class="stage-name">Ribes de Freser - Pardines</span></div>
+    <div class="stage"><span class="stage-label">Étape 40:</span><span class="stage-name">Pardines - Queralbs</span></div>
+    <div class="stage"><span class="stage-label">Étape 41:</span><span class="stage-name">Queralbs - Núria</span></div>
+    <div class="stage"><span class="stage-label">Étape 42:</span><span class="stage-name">Núria - Fontalba</span></div>
+    <div class="stage"><span class="stage-label">Étape 43:</span><span class="stage-name">Fontalba - Setcases</span></div>
+    <div class="stage"><span class="stage-label">Étape 44:</span><span class="stage-name">Setcases - Molló</span></div>
+    <div class="stage"><span class="stage-label">Étape 45:</span><span class="stage-name">Molló - Sant Pau de Segúries</span></div>
+    <div class="stage"><span class="stage-label">Étape 46:</span><span class="stage-name">Sant Pau de Segúries - Camprodon</span></div>
+  </div>
+
 </body>
 </html>
