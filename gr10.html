@@ -56,16 +56,17 @@
       flex-wrap: wrap;
     }
     .stage-label {
-      background-color: #cc0605; /* rojo oficial GR */
-      color: #f4f4f4;             /* texto blanco oficial GR */
+      background-color: #cc0605;
+      color: #ffffff; /* texto blanco oficial */
+      padding: 6px 8px; /* menos padding horizontal para que el fondo rojo sea más ajustado */
       font-weight: bold;
       text-align: center;
       border-radius: 6px;
       display: inline-block;
       margin-right: 10px;
-      width: 90px;                /* ancho fijo uniforme para todas las etapas */
-      padding: 6px 0;             /* ajuste vertical, sin padding horizontal */
+      min-width: fit-content; /* que solo ocupe el ancho del texto */
       white-space: nowrap;
+      width: 80px; /* ancho fijo para todos igual */
     }
     .stage-name {
       font-weight: bold;
