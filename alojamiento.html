@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Alojamiento</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: sans-serif;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    iframe {
+      flex: 1;
+      border: none;
+      width: 100%;
+    }
+    .volver {
+      background: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+    }
+    .volver button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Web del Alojamiento</h2>
+  </header>
+
+  <iframe id="iframeAlojamiento" src=""></iframe>
+
+  <div class="volver">
+    <button onclick="window.history.back()">⬅ Volver al PDF</button>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const url = params.get("url");
+    if (url) {
+      document.getElementById("iframeAlojamiento").src = url;
+    } else {
+      document.body.innerHTML = "<p style='padding: 2em;'>⚠ No se especificó ninguna URL de alojamiento.</p>";
+    }
+  </script>
+</body>
+</html>
