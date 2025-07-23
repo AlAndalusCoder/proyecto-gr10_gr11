@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirigiendo...</title>
+</head>
+<body>
+  <script>
+    const url = new URLSearchParams(window.location.search).get('dest');
+    if (url) {
+      window.location.href = `alojamiento.html?url=${encodeURIComponent(url)}`;
+    } else {
+      document.body.innerText = 'URL no válida';
+    }
+  </script>
+</body>
+</html>
