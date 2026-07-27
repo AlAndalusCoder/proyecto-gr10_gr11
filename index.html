@@ -66,7 +66,28 @@
       background-color: #b30504;
       box-shadow: 0 6px 15px rgba(179, 5, 4, 0.3);
     }
+.gpx-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #0066cc;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,.25);
+  z-index: 1000;
+}
 
+.gpx-btn:hover {
+  background: #0052a3;
+}
     @media (max-width: 400px) {
       .btn {
         font-size: 1.15em;
@@ -85,5 +106,6 @@
       GR-11
     </a>
   </div>
+  <a href="gpx/" class="gpx-btn" target="_blank" rel="noopener noreferrer">GPX</a>
 </body>
 </html>
