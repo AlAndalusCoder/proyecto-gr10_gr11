@@ -2,14 +2,64 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Archivos GPX</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#ffffff;
+    font-family:Arial,sans-serif;
+}
+
+.contenedor{
+    max-width:600px;
+    margin:80px auto;
+}
+
+.archivo{
+    display:flex;
+    align-items:center;
+    margin:45px 25px;
+}
+
+.icono{
+    font-size:36px;
+    margin-right:18px;
+}
+
+.archivo a{
+    font-size:28px;
+    font-weight:bold;
+    color:#1565c0;
+    text-decoration:none;
+}
+
+.archivo a:hover{
+    text-decoration:underline;
+}
+
+</style>
+
 </head>
 
 <body>
 
+<div class="contenedor">
+
+<div class="archivo">
+<span class="icono">📄</span>
 <a href="gpx/gr10.gpx">gr10.gpx</a>
-<br><br>
+</div>
+
+<div class="archivo">
+<span class="icono">📄</span>
 <a href="gpx/bin.xml">bin.xml</a>
+</div>
+
+</div>
 
 </body>
 </html>
