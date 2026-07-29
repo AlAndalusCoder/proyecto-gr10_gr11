@@ -12,26 +12,30 @@ body{
     margin:0;
     background:#ffffff;
     font-family:Arial,sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .contenedor{
-    width:fit-content;
-    margin:120px auto 0 auto;
     display:flex;
     flex-direction:column;
-    gap:55px;
+    gap:38px;
 }
 
 .archivo{
-    display:grid;
-    grid-template-columns:60px auto;
+    display:flex;
     align-items:center;
-    column-gap:20px;
+    justify-content:center;
 }
 
 .icono{
-    font-size:40px;
-    text-align:center;
+    width:28px;
+    height:28px;
+    margin-right:16px;
+    fill:#1565c0;
+    flex-shrink:0;
 }
 
 .archivo a{
@@ -54,13 +58,23 @@ body{
 <div class="contenedor">
 
 <div class="archivo">
-<span class="icono">📄</span>
+
+<svg class="icono" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M6 2h8l4 4v16H6V2zm7 1.5V7h3.5L13 3.5zM8 10v2h8v-2H8zm0 4v2h8v-2H8z"/>
+</svg>
+
 <a href="gpx/gr10.gpx">gr10.gpx</a>
+
 </div>
 
 <div class="archivo">
-<span class="icono">📄</span>
+
+<svg class="icono" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M6 2h8l4 4v16H6V2zm7 1.5V7h3.5L13 3.5zM8 10v2h8v-2H8zm0 4v2h8v-2H8z"/>
+</svg>
+
 <a href="gpx/bin.xml" download>bin.xml</a>
+
 </div>
 
 </div>
